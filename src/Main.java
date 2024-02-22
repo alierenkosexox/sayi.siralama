@@ -15,25 +15,25 @@ public class Main {
         System.out.println("3.= c sayısını giriniz ");          // 3. sayıyı iste ve c değerine kaydet
         c = input.nextInt();
 
-        if ((a > b) && (a > c)) {               // a nın en büyük olduğu senaryoda if ile b ve c nin tüm durumlarını
-            if (b > c) {                         // belirle ve durumuna göre sıralamyı yazdır
-                System.out.println("a > b > c");
-            } else if (c > b) {
-                System.out.println("a > c > b");
+        if ((a < b) && (a < c)) {               // a nın en küçük olduğu senaryoda if ile b ve c nin tüm durumlarını
+            if (b < c) {                         // belirle ve durumuna göre sıralamyı yazdır
+                System.out.println("a < b < c");
+            } else if (c < b) {
+                System.out.println("a < c < b");
             }
         }
-        if ((b > a) && (b > c)) {                  // b nin en büyük olduğu senaryoda diğer olasılıkları belirle ve yazdır
-            if (a > c) {
-                System.out.println("b > a > c");
-            } else if (c > a) {
-                System.out.println("b > c > a");
+        if ((b < a) && (b < c)) {                  // b nin en küçük olduğu senaryoda diğer olasılıkları belirle ve yazdır
+            if (a < c) {
+                System.out.println("b < a < c");
+            } else if (c < a) {
+                System.out.println("b < c < a");
             }
         }
-            if ((c > b) && (c > a)) {               // c nin en büyük olduğu senaryoyu belirle ve yazdır
-                if (a > b) {
-                    System.out.println("c > a > b");
-                } else if( b > a ) {
-                    System.out.println("c > b > a");
+            if ((c < b) && (c < a)) {               // c nin en küçük olduğu senaryoyu belirle ve yazdır
+                if (a < b) {
+                    System.out.println("c < a < b");
+                } else if( b < a ) {
+                    System.out.println("c < b < a");
                 }
             }
         }
